@@ -1,0 +1,14 @@
+spring:
+  application:
+    name: tracking-api
+  data:
+    mongodb:
+      uri: mongodb://localhost:27017/trackingdb
+  kafka:
+    bootstrap-servers: localhost:9092
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: health,info,prometheus
